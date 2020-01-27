@@ -77,7 +77,9 @@ function getCaptureBindings({
 
         const point: Position = {
           x: clientX,
-          y: clientY,
+          // TOBY - hack to force lock on x-axis for toolbox tab bar.
+          // y: clientY,
+          y: 0,
         };
 
         const phase: Phase = getPhase();
